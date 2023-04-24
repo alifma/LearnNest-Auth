@@ -1,4 +1,4 @@
-const { Entity, PrimaryGeneratedColumn, Column } = require("typeorm");
+const { Entity, PrimaryGeneratedColumn, Column } = require('typeorm');
 
 @Entity('users')
 export class User {
@@ -8,7 +8,7 @@ export class User {
   @Column()
   name: string;
 
-  @Column({unique: true})
+  @Column({ unique: true })
   email: string;
 
   @Column()
