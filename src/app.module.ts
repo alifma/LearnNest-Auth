@@ -15,7 +15,8 @@ import { User } from './user.entity';
       database: 'nest_auth',
       entities: [User],
       synchronize: true,
-    })
+    }),
+    TypeOrmModule.forFeature([User])
   ],
   controllers: [AppController],
   providers: [AppService],
